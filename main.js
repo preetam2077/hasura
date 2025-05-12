@@ -42,7 +42,7 @@ function balUp(){
 
 function didwin(bet){
         if(nodivs[0].childNodes[0].textContent === nodivs[1].childNodes[0].textContent && nodivs[0].childNodes[0].textContent ===  nodivs[2].childNodes[0].textContent){
-            console.log(bet)
+            console.log(typeof bet, "is the type of bet")
             spinbtn.classList.remove("spinbtn-active")
             balance += bet
             balUp()
@@ -71,7 +71,7 @@ function spun(){
             console.log(typeof betAmount)
             betAmount = 50
         }else{
-            betAmount = Number(betAmount)
+            betAmount = betAmount
         }
 
 
