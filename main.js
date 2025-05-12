@@ -44,7 +44,7 @@ function didwin(bet){
         if(nodivs[0].childNodes[0].textContent === nodivs[1].childNodes[0].textContent && nodivs[0].childNodes[0].textContent ===  nodivs[2].childNodes[0].textContent){
             console.log(bet)
             spinbtn.classList.remove("spinbtn-active")
-            Number(balance) += bet
+            balance += bet
             balUp()
             console.log("you won")
             
@@ -71,7 +71,7 @@ function spun(){
             console.log(typeof betAmount)
             betAmount = 50
         }else{
-            betAmount = betAmount
+            betAmount = Number(betAmount)
         }
 
 
