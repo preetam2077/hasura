@@ -27,16 +27,16 @@ header{
 }
 
 li{
-    height: 52px;
-    width: 188px;
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
+    
 }
 
 
 .balance{
+    padding:10px;
     text-shadow:2px 4px 2px #00000055;
     background-color: #FFFFFF;
     color: #000000;
