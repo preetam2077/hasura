@@ -51,6 +51,7 @@ function didwin(bet){
             console.log("you won")
             
         }else{
+            console.log(typeof bet, "is the type of bet")
             console.log(bet)
             spinbtn.classList.remove("spinbtn-active")
             balance -= bet
