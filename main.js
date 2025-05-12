@@ -42,17 +42,14 @@ function balUp(){
 
 function didwin(bet){
         if(nodivs[0].childNodes[0].textContent === nodivs[1].childNodes[0].textContent && nodivs[0].childNodes[0].textContent ===  nodivs[2].childNodes[0].textContent){
-            bet = Number(bet)
-            console.log(typeof bet, "is the type of bet")
+            console.log(typeof bet," is bets type")
             spinbtn.classList.remove("spinbtn-active")
-            
             balance += bet
             balUp()
             console.log("you won")
             
         }else{
-            console.log(typeof bet, "is the type of bet")
-            console.log(bet)
+            console.log(typeof bet," is bets type")
             spinbtn.classList.remove("spinbtn-active")
             balance -= bet
             balUp()
@@ -123,7 +120,8 @@ function spun(){
         
         
         setTimeout(function(){
-            if(canCall){didwin(betAmount)}
+            if(canCall){
+                didwin(Number(betAmount))}
             canCall= false 
             
         }, 3000)
