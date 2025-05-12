@@ -44,6 +44,7 @@ function didwin(bet){
         if(nodivs[0].childNodes[0].textContent === nodivs[1].childNodes[0].textContent && nodivs[0].childNodes[0].textContent ===  nodivs[2].childNodes[0].textContent){
             console.log(typeof bet, "is the type of bet")
             spinbtn.classList.remove("spinbtn-active")
+            bet = Number(bet)
             balance += bet
             balUp()
             console.log("you won")
