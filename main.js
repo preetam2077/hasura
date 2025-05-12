@@ -17,17 +17,9 @@ let inp = document.getElementById("inp")
 
 inp.addEventListener('keyup', goodInp)
 
-function goodInp(){
-    print(Boolean(inp.value))
-    if(String(inp.value).includes(".")){
-        console.log("Invalidddd")
-        let betinp = document.getElementById("betinp")
-        /*betinp.style.backgroundImage = "linear-gradient(#AA3333, #FFFFFF, #AA3333)"*/
-    }
-    /*else{
-        document.getElementById("betinp").style.backgroundImage = "linear-gradient(#FFAC13, #FFFFFF, #FFAC13)"
-    }*/
-}
+
+
+
 
 function balUp(){
     bal.textContent = "$" + String(balance)
