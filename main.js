@@ -87,12 +87,13 @@ function spun(){
             let n1 = Math.floor(Math.random()*7)+1
             let n2
             let n3
-            let weight = Math.random()
+            let weight = Math.round(Math.random() * 10) / 10
             if (weight <0.5){
                 console.log("weight is", weight)
                 n2 = n1;
                 n3 = n1;
             }else{
+                console.log("weight is", weight)
                 n2 = Math.floor(Math.random()*7)+1
                 n3 = Math.floor(Math.random()*7)+1
             }
