@@ -22,11 +22,11 @@ function goodInp(){
     if(String(inp.value).includes(".")){
         console.log("Invalidddd")
         let betinp = document.getElementById("betinp")
-        betinp.style.backgroundImage = "linear-gradient(#AA3333, #FFFFFF, #AA3333)"
+        /*betinp.style.backgroundImage = "linear-gradient(#AA3333, #FFFFFF, #AA3333)"*/
     }
-    else{
+    /*else{
         document.getElementById("betinp").style.backgroundImage = "linear-gradient(#FFAC13, #FFFFFF, #FFAC13)"
-    }
+    }*/
 }
 
 function balUp(){
