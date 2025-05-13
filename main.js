@@ -1,4 +1,7 @@
 const spinbtn = document.getElementById("mainbtn")
+
+
+
 let a = JSON.parse(localStorage.getItem("stats"))
 let balance;
 if (a == null){
@@ -62,18 +65,22 @@ function didwin(bet){
             balance += bet
             balUp()
             console.log("you won")
+            bal.style.animationName = "blinkgreen"
+
             
         }else{
             console.log(typeof bet," is bets type")
             spinbtn.classList.remove("spinbtn-active")
             balance -= bet
             balUp()
+            bal.style.animationName = "blinkred"
             console.log("you lost")
         }
 }
 
 function spun(){
     console.log("clicked")
+    bal.style.animationName = "none"
     let betAmount = inp.value
     if(bdown == false && isGoodInput  && betAmount <= balance && balance > 0){
         bdown = true
