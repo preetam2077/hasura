@@ -42,7 +42,38 @@ li{
     color: #000000;
     font-size:30px;
     text-decoration:none;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-name:none;
 }
+
+@keyframes blinkgreen{
+    0%{
+        color: #000000;
+    }
+    50%{
+        color: #15ff0070;
+        text-shadow:2px 4px 2px #91ff8255;
+
+    }
+    100%{
+        color: #000000;
+    }
+}
+
+@keyframes blinkred{
+    0%{
+        color: #000000;
+    }
+    50%{
+        color: #ff000070;
+        text-shadow:2px 4px 2px #ff828255;
+    }
+    100%{
+        color: #000000;
+    }
+}
+
 .paren{
     display: flex;
     justify-content: space-evenly;
@@ -60,6 +91,7 @@ li{
 }
 
 .whole{
+    box-shadow: -4px -4px 10px #00000070, 4px 4px 10px #00000070;
     row-gap: 20px;
     height: 600px;
     width: 600px;
@@ -73,6 +105,7 @@ li{
 
 
 .slotrect{
+    box-shadow: 4px 4px 10px #00000070;
     gap: 5px;
     display: flex;
     flex-direction: column;
@@ -90,7 +123,7 @@ li{
     border-style: solid;
     border-color: #AA3333;
     border-width: 15px;
-    box-shadow: inset 4px 4px 3px #000000ab;
+    box-shadow: inset 4px 4px 3px #000000ab, 6px 6px 4px #00000052, -4px -4px 4px #00000052;
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -143,19 +176,22 @@ li{
     background-color: #AA3333;
     width: 512px;
     height:21px;
+    box-shadow: 2px 2px 3px #00000062;
 }
 
 .lower h1{
     padding-left:15px;
     text-shadow:0px 3px #3f2900 ;
-    color:#FFAC13;
+    color:#f4b746;
     font-size:85px;
     position:absolute;
-    white-space: nowrap;
+    white-space: nowrap; 
 
     /* background: -webkit-linear-gradient(#FFAC13,#ffffff, #FFAC13);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent; 
+    text-shadow:0px 3px rgb(69, 146, 37) ;
+    color:#bbff9e;*/
 }
 
 .buttonrect{
