@@ -1,5 +1,17 @@
 const spinbtn = document.getElementById("mainbtn")
-let balance = 1000
+let a = JSON.parse(localStorage.getItem("stats"))
+let balance;
+if (a == null){
+    console.log("stats no found in storage")
+     a = {
+        money:1000
+     }
+     balance = a.money
+     localStorage.setItem("stats", JSON.stringify(a))
+}else{
+    balance = a.money
+}
+// let balance = 1000
 let bal = document.getElementById("bal")
 bal.textContent = "$"+String(balance)
 let bdown = false       
@@ -34,6 +46,9 @@ function goodInp(){
 }
 
 function balUp(){
+    a.money = balance
+    localStorage.removeItem('stats')
+    localStorage.setItem('stats',JSON.stringify(a))
     bal.textContent = "$" + String(balance)
     bal.style.fontSize = `${32-bal.textContent.length}px`
     console.log("updated")
