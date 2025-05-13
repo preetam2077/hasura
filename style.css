@@ -151,6 +151,7 @@ li{
     color:#FFAC13;
     font-size:85px;
     position:absolute;
+    white-space: nowrap;
 
     /* background: -webkit-linear-gradient(#FFAC13,#ffffff, #FFAC13);
     -webkit-background-clip: text;
