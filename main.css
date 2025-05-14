@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Press+Start+2P&display=swap');
+
+
+body{
+    padding: min(6%, 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+}
+
+.parent{
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:min(90% ,900px);
+    height: min(600px);
+    background: #004B10;
+    background: linear-gradient(2deg, rgba(0, 75, 16, 1) 0%, rgba(0, 126, 27, 1) 50%, rgba(0, 177, 38, 1) 100%);
+}
+
+.middle{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+.buttons{
+    z-index: 99999;
+    margin-bottom: 80px;
+    gap: 20px;
+    height: 170px;
+    width:200px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button {
+    font-family: "Press Start 2P";
+    color: #005713;
+    box-shadow: 2px 2px 10px #00000094,2px 2px 10px #000000af ;
+    opacity: 0.8;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #D9D9D9;
+    border: none;
+    height: 100px;
+    width: 180px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    transform: scale(1.09, 1.09);
+    letter-spacing: 2px;
+    opacity: 1;
+    background-color: #ffffff;
+}
+
+.logo{
+    z-index:99999;
+    margin-top: 15px;
+    /* background-color: red; */
+    height: fit-content;
+    width: fit-content;
+}
+
+img{
+    height:100px;
+    width:200px ;
+}
+
+.cards{
+    bottom: -150px;
+    z-index: 1;
+    left:-100px;
+    position:absolute;
+    height:700px ;
+    width: 700px;
+}
+.dollars1{
+
+    left: 20px;
+    bottom:10px;
+    position: absolute;
+}
+
+.dollars1 li{
+    background: #5C7504;
+    background: linear-gradient(2deg, rgba(92, 117, 4, 1) 0%, rgba(172, 219, 7, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    opacity: 0.5;
+    list-style: none;
+    font-family: 'Press Start 2P';
+    font-size:80px;
+}
+
+.dollars2{
+
+    left: 120px;
+    bottom:-30px;
+    position: absolute;
+}
+
+.dollars2 li{
+    text-shadow: 2px 2px 1px #00000054;
+    background: #5C7504;
+    background: linear-gradient(2deg, rgba(92, 117, 4, 1) 0%, rgba(172, 219, 7, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    opacity: 0.5;
+    list-style: none;
+    font-family: 'Press Start 2P';
+    font-size:80px;
+}
+
+.dollars3{
+
+    left: 230px;
+    bottom:-30px;
+    position: absolute;
+}
+
+.dollars3 li{
+    background: #5C7504;
+    background: linear-gradient(2deg, rgba(92, 117, 4, 1) 0%, rgba(172, 219, 7, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    opacity: 0.5;
+    list-style: none;
+    font-family: 'Press Start 2P';
+    font-size:80px;
+}
+
+.dollars4{
+
+    left: 360px;
+    bottom:-10px;
+    position: absolute;
+}
+
+.dollars4 li{
+    text-shadow: 2px 2px 1px #00000054;
+    background: #5C7504;
+    background: linear-gradient(2deg, rgba(92, 117, 4, 1) 0%, rgba(172, 219, 7, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    opacity: 0.5;
+    list-style: none;
+    font-family: 'Press Start 2P';
+    font-size:120px;
+}
+
+.dollars5{
+
+    left: 520px;
+    bottom:-50px;
+    position: absolute;
+}
+
+.dollars5 li{
+    background: #5C7504;
+    background: linear-gradient(2deg, rgba(92, 117, 4, 1) 0%, rgba(172, 219, 7, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    opacity: 0.5;
+    list-style: none;
+    font-family: 'Press Start 2P';
+    font-size:120px;
+}
+
+.dollars6{
+
+    left: 660px;
+    bottom:-25px;
+    position: absolute;
+}
+
+
+
+.dollars6 li{
+    
+    background: #5C7504;
+    background: linear-gradient(2deg, rgba(92, 117, 4, 1) 0%, rgba(172, 219, 7, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    opacity: 0.5;
+    list-style: none;
+    font-family: 'Press Start 2P';
+    font-size:120px;
+}
+
+.dollars6 li:nth-child(2){
+    text-shadow: 2px 2px 1px #00000054;
+}
+
+.dollars7{
+    left: 810px;
+    bottom:-10px;
+    position: absolute;
+}
+
+.dollars7 li{
+    background: #5C7504;
+    background: linear-gradient(2deg, rgba(92, 117, 4, 1) 0%, rgba(172, 219, 7, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    opacity: 0.5;
+    list-style: none;
+    font-family: 'Press Start 2P';
+    font-size:160px;
+}
+
+.dollars7 li:nth-child(1){
+    text-shadow: 2px 2px 1px #00000054;
+}
+
+a{
+    color:#004B10;
+    text-decoration: none;
+}
